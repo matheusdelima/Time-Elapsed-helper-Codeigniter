@@ -33,20 +33,20 @@ if ( ! function_exists('time_elapsed_string'))
           return '0 seconds';
       }
 
-      $a = array( 365 * 24 * 60 * 60  =>  'ano',
-                   30 * 24 * 60 * 60  =>  'mês',
-                        24 * 60 * 60  =>  'dia',
-                             60 * 60  =>  'hora',
-                                  60  =>  'minuto',
-                                   1  =>  'secundo'
+      $a = array( 365 * 24 * 60 * 60  =>  'year',
+                   30 * 24 * 60 * 60  =>  'month',
+                        24 * 60 * 60  =>  'day',
+                             60 * 60  =>  'hour',
+                                  60  =>  'minute',
+                                   1  =>  'second'
       );
 
-      $a_plural = array( 'ano'   => 'anos',
-                         'mês'  => 'meses',
-                         'dia'    => 'dias',
-                         'hora'   => 'horas',
-                         'minuto' => 'minutos',
-                         'secundo' => 'segundos'
+      $a_plural = array( 'ano'      => 'years',
+                         'mês'      => 'months',
+                         'dia'      => 'days',
+                         'hora'     => 'times',
+                         'minuto'   => 'minutes',
+                         'secundo'  => 'seconds'
       );
 
       foreach ($a as $secs => $str)
